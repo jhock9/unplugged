@@ -87,6 +87,306 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/*-------------------- Base Styles --------------------*/
+
+body {
+
+}
+
+main {
+
+}
+
+body,
+header,
+main,
+footer,
+aside,
+.features,
+.reviews,
+.mission,
+.content-section,
+.faq,
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+/***** Header - all pages *****/
+
+header {
+
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+
+}
+
+.header-divider {
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul {
+
+}
+
+header nav ul li {
+
+}
+
+/*-------------------- Mobile Styles - Homepage --------------------*/
+
+main {
+
+}
+
+.hero-area {
+
+}
+
+.hero-area .content-wrapper {
+
+}
+
+aside {
+
+}
+
+aside .content-wrapper {
+
+}
+
+aside .form-description {
+
+}
+
+aside h3 {
+
+}
+
+aside p {
+
+}
+
+aside .form {
+
+}
+
+aside .form input {
+
+}
+
+.features {
+
+}
+
+.features .content-wrapper {
+
+}
+
+.features h2 {
+
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+}
+
+.features article {
+
+}
+
+.features .fontawesome-icon {
+
+}
+
+.features .features-item-description {
+
+}
+
+.reviews {
+
+}
+
+.reviews .content-wrapper {
+
+}
+
+.reviews h2 {
+
+}
+
+.reviews article {
+
+}
+
+.reviews h3 {
+
+}
+
+.reviews p {
+
+}
+
+/***** Footer - all pages *****/
+
+footer {
+
+}
+
+footer .content-wrapper {
+  
+}
+
+footer .footer-content {
+
+}
+
+footer .contact {
+
+}
+
+footer h4 {
+
+}
+
+footer address {
+
+}
+
+footer address p {
+  
+}
+
+footer .social {
+
+}
+
+footer .social-icons {
+
+}
+
+footer .social-icons p {
+
+}
+
+.copyright {
+
+}
+
+/*-------------------- Mobile Styles - About page --------------------*/
+
+.mission {
+
+}
+
+.mission content-wrapper {
+
+}
+
+.mission h2 {
+
+}
+
+.mission mission-content {
+
+}
+
+.mission p {
+
+}
+
+.map {
+
+}
+
+.map figure {
+
+}
+
+.content-section {
+
+}
+
+.content-section .content-wrapper {
+
+}
+.content-section h2 {
+
+}
+.content-section .contact-content {
+
+}
+
+.content-section h4 {
+
+}
+
+.content-section p {
+
+}
+
+/*-------------------- Mobile Styles - FAQ page --------------------*/
+
+.faq {
+
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.faq h2 {
+
+}
+
+.faq .faq-content {
+
+}
+
+.faq h3 {
+
+}
+
+.faq p {
+
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
