@@ -616,14 +616,13 @@ aside input {
     width: 100%;
   }
 
-
  /**** TABLET STYLES - About Page ****/
 
   .mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
   }
 
   .mission-content p {
@@ -632,6 +631,7 @@ aside input {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+    margin: 0 0 50px 0;
   }
 
   .contact-content {
@@ -657,8 +657,60 @@ aside input {
 }
 
 @media screen and (min-width: 1200px) {
-  /*Desktop styles here*/
+ /**** DESKTOP STYLES - Homepage ****/
+ 
+   /* Base Styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
 
+  /* Header */
+  /*apparently not needed... */
+    header {
+    padding: 20px 0;
+  } 
+
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
+}
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .form-description,
+  aside .form {        
+    width: 30%;         
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 45%;        
+  }
+
+ /**** DESKTOP STYLES - About Page ****/
+ 
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+  }
+
+ /**** DESKTOP STYLES - FAQ Page ****/
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
