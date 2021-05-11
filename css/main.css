@@ -224,7 +224,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile Styles - Homepage -------------------- */
+/* ==========================================================================
+   Mobile Styles - Homepage
+   ========================================================================== */
 
 /* Hero Area */
 
@@ -315,10 +317,6 @@ aside input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.reviews .content-wrapper {
-  width: 90%;
 }
 
 .reviews h2 {
@@ -521,15 +519,89 @@ aside input {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+  /* Base Styles */
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  /* Here Area */
+
+  /* Aside */
+
+  aside .content-wrapper {
+    margin: 50px 0;
+  }
+
+  aside .form-description,
+  aside .form {        
+      width: 45%;         
+      margin: 0;
+  }
+
+  /* Aside */
+
+  .features article {
+    width: 50%;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+ 
+  .features .features-item-description {
+    width: 35%; 
+  }
+
+  /* Reviews */
+
+  .reviews article div {
+    width: 50%;        
+  }
+
+  /* Footer */
+
+  footer .content-wrapper{
+    width: 100%;
+  }
+
+  footer .contact,
+  footer .social {
+    width: 40%;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
 }
 
 /* ==========================================================================
