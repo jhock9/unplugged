@@ -97,9 +97,9 @@ main {
 /*no flex?*/
 }
 
-.content-wrapper { /*******which of these do I use? try them both*******/
-  width: 85%;
-  /*padding: 0 20px;*/
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
 }
 
 h1 {
@@ -141,6 +141,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 header img {
@@ -149,6 +150,8 @@ header img {
 
 .header-divider {
   width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -157,13 +160,12 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-  padding: 20px 0;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 20%;
+  width: 100%;
 }
 
 header nav ul li {
@@ -171,13 +173,12 @@ header nav ul li {
 }
 
 footer {
-
+  flex-direction: column;
 }
 
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0; /*why is this here again?*/
-  padding: 25px 0;
 }
 
 footer .footer-content {
@@ -185,15 +186,18 @@ footer .footer-content {
 }
 
 footer .contact {
-  padding: 25px 0;
+  margin-bottom: 50px;
 }
 
 footer h4 {
 
 }
 
+footer p {
+  margin: 0;
+}
+
 footer address {
-  padding: 20px 0 0 0;
 }
 
 footer address p {
@@ -201,7 +205,7 @@ footer address p {
 }
 
 footer .social {
-  padding: 25px 0;
+
 }
 
 footer .social-icons {
@@ -214,11 +218,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 0 0;
 }
 
-.copyright {
-padding: 5px;
+footer .copyright {
+  margin: 20px 0;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -232,7 +235,7 @@ padding: 5px;
 }
 
 .hero-area .content-wrapper {
-  padding: 55px 0;
+
 }
 
 /* Aside */
@@ -249,23 +252,23 @@ aside .content-wrapper {
 }
 
 aside .form-description {
-  padding: 20px 0;
+
 }
 
 aside h3 {
-  padding: 10px 0;
+
 }
 
 aside p {
-  padding: 5px 0;
+
 }
 
 aside .form {
-  padding: 10px 0 45px 0; /* shorten the 45px to 20px? to make it more even*/
+
 }
 
 aside input {
-  padding: 10px 0;
+
 }
 
 /* Features */
@@ -277,11 +280,11 @@ aside input {
 }
 
 .features .content-wrapper {
-  padding: 50px 0;
+
 }
 
 .features h2 {
-
+  margin-bottom: 60px;
 }
 
 .features .features-items {
@@ -289,15 +292,16 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0 0 0;
 }
 
 .features article {
-  width: 55%;
+  width: 63%;
+  margin: 30px 0;
 }
 .features p {
-  padding: 20px 0;
+  margin: 0;
 }
+
 /******* these needed???
 .features .fontawesome-icon {
 }
@@ -314,11 +318,11 @@ aside input {
 }
 
 .reviews .content-wrapper {
-padding: 35px 0;
+  width: 90%;
 }
 
 .reviews h2 {
-  padding: 15px 0;
+  margin-bottom: 40px;
 }
 
 .reviews article {
@@ -326,12 +330,12 @@ padding: 35px 0;
 }
 
 .reviews h3 {
-  width: 50%;
-  padding: 10px 0;
+  width: 55%;
+  margin: 20px 0;
 }
 
 .reviews p {
-  padding: 10px 0;
+
 }
 
 /* ==========================================================================
@@ -389,8 +393,8 @@ padding: 35px 0;
 
 }
 
-.contact-section p {
-
+.contact-content p {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -409,14 +413,16 @@ padding: 35px 0;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
+  margin-bottom: 40px;
 
 }
 
-.faq .faq-content {
-
+.faq-content {
+  margin-bottom: 50px;
 }
 
 .faq h3 {
