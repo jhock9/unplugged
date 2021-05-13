@@ -152,6 +152,14 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 /* -------------------- Header/Footer - ALL PAGES -------------------- */
 
 header,
@@ -175,8 +183,12 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-header img {
-  /*header logo*/
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -271,6 +283,8 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url('img/hero.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -313,6 +327,7 @@ input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: lightgray;
+  font-size: .875em;
   font-style: italic;
   padding: 15px;
 }
@@ -334,6 +349,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('img/features.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -380,11 +397,17 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 25px 0;
   line-height: 30px;
 }
 
 .reviews article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews figure {
 
 }
 
@@ -592,6 +615,18 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
   /* Header */
   header {
     justify-content: space-around;
@@ -603,12 +638,17 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 35%;
+  }
+
   .header-divider {
     display: none;
   }
 
   header nav {
     width: 20%;
+    font-size: 1em;
   }
 
   header nav ul {
@@ -636,26 +676,46 @@ input[type=button] {
   }
 
   /* Features */
+  
+  .features h2 {
+    margin: 0;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
+    width: 50%;
+    margin: 40px 0 0 0;
   }
 
   .features .features-item-description {
-    width: 50%; 
+    width: 65%; 
   }
 
   /* Reviews */
   .reviews article {
     display: flex;
     justify-content:space-between;
+    align-items: center;
   }
 
+  .reviews h3 {
+    width: 75%;
+    margin: 0 0 20px 0;
+  }
+
+  .reviews figure {
+    width: 48%;
+  }
   .reviews article div {
-    width: 50%;        
+    width: 48%;        
+  }
+
+  .reviews p {
+    margin: 0;
   }
 
   /* Footer */
@@ -666,7 +726,7 @@ input[type=button] {
 
   .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -689,7 +749,8 @@ input[type=button] {
   }
 
   .mission-content p {
-    width: 45%;
+    width: 48%;
+    margin: 0;
   }
 
   .contact-section .content-wrapper h2 {
@@ -703,20 +764,30 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+  }
+    
  /**** TABLET STYLES - FAQ Page ****/
 
   .faq .content-wrapper {
     justify-content: space-between;
+    
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 48%;
   }
 
   .faq h2 {
     width: 100%;
   }
 
+  .faq h3 {
+    font-size: .875em;
+    margin: 0 0 15px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -729,14 +800,18 @@ input[type=button] {
 
   /* Header */
   /*apparently not needed... */
-    header {
+  header {
     padding: 20px 0;
   } 
+
+  header figure {
+    width: 30%;
+  }
 
   /* Hero */
   .hero-area h1 {
     width: 60%;
-}
+  }
 
   /* Aside */
   aside .content-wrapper {
