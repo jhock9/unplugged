@@ -105,13 +105,6 @@ body {
   margin: 50px 0;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
-  font-weight: 500;
-  line-height: 1.2; 
-}
-
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -273,9 +266,18 @@ footer .copyright {
 .hero-area {
   background: url('../img/hero.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
 }
 
 /* Aside */
@@ -574,11 +576,6 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  h1 {
-    font-size: 3em;
-    line-height: 48px;
-  }
-
   h2 {
     font-size: 2.25em;
     line-height: 48px;
@@ -627,6 +624,14 @@ input[type=button] {
   }
 
   /* Hero Area */
+  .hero-area { 
+    min-height: 600px;
+  }
+
+  .hero area h1 {
+    font-size: 3em;
+    line-height: 48px;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -796,12 +801,6 @@ input[type=button] {
     max-width: 960px;
   }
 
-  h1 {
-    font-size: 3.75em;
-    line-height: 78px;
-    width: 75%;
-  }
-
   h2 {
     font-size: 3em;
     line-height: 56px;
@@ -830,6 +829,17 @@ input[type=button] {
 
   header nav {
     font-size: 1.125em;
+  }
+
+  /* Hero Area */
+  .hero-area .content-wrapper {
+    margin: 40px 0;
+  }
+  
+  .hero-area h1 {
+    font-size: 3.75em;
+    line-height: 78px;
+    width: 75%;
   }
 
   /* Aside */
