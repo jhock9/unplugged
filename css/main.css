@@ -261,7 +261,7 @@ footer .social-icons p i {
 }
 
 footer .copyright {
-  margin: 20px 0;
+  margin-bottom: 10px;
 }
 
 /* ==========================================================================
@@ -334,7 +334,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin: 0 0 60px 0;
+  margin: 0 0 50px 0;
 }
 
 .features .features-items {
@@ -387,6 +387,7 @@ input[type=button] {
 
 .reviews h3 {
   width: 55%;
+  line-height: 24px;
 }
 
 /* ==========================================================================
@@ -469,6 +470,7 @@ input[type=button] {
 
 .faq h3 {
   margin: 0 0 15px 0;
+  line-height: 24px;
 }
 
 .faq p {
@@ -669,7 +671,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 60%; 
+    width: 65%; 
   }
 
   /* Reviews */
@@ -682,6 +684,7 @@ input[type=button] {
   .reviews h3 {
     width: 75%;
     margin: 0 0 20px 0;
+    line-height: 30px;
   }
 
   .reviews figure {
@@ -771,6 +774,7 @@ input[type=button] {
 
   .faq-content {
     flex-basis: 48%;
+    margin-top: 40px;
   }
 
   .faq h2 {
@@ -868,6 +872,9 @@ input[type=button] {
   .reviews article {
     align-items: flex-start;
   }
+  .reviews h3 {
+    line-height: 38px;
+  }
 
   .reviews article figure,
   .reviews article div {
@@ -890,7 +897,7 @@ input[type=button] {
   }
 
   .mission-content p {
-    width: 48%;
+    width: 47%;
   }
 
   .map figure {
