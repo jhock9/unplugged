@@ -123,6 +123,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  line-height: 36px;
 }
 
 h3,
@@ -130,6 +131,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 400;
+  line-height: 30px;
   /*margin: 20px 0; didnt add this */
 }
 
@@ -241,7 +243,7 @@ footer .contact {
 }
 
 footer h4 {
-
+  margin: 0 0 20px 0;
 }
 
 footer p {
@@ -398,7 +400,6 @@ input[type=button] {
 
 .reviews h2 {
   margin: 0 0 25px 0;
-  line-height: 30px;
 }
 
 .reviews article {
@@ -494,7 +495,6 @@ input[type=button] {
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,12 +502,11 @@ input[type=button] {
 }
 
 .faq h2 {
-  margin: 0 0 40px 0;
-
+  margin: 0;
 }
 
 .faq-content {
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .faq h3 {
@@ -617,14 +616,22 @@ input[type=button] {
 
   h1 {
     font-size: 3em;
+    line-height: 48px;
   }
 
   h2 {
     font-size: 2.25em;
+    line-height: 48px;
   }
 
-  h3 {
+  h3,
+  h4 {
     font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  p {
+    line-height: 18px;
   }
 
   /* Header */
@@ -671,9 +678,13 @@ input[type=button] {
 
   aside .form-description,
   aside .form {        
-    width: 40%;         
+    width: 45%;         
     margin: 0;
   }
+
+  input {
+  padding: 20px 0;
+  } 
 
   /* Features */
   
@@ -681,18 +692,22 @@ input[type=button] {
     margin: 0;
   }
 
+  .features .features-items {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     flex-basis: 50%;
-    width: 50%;
     margin: 40px 0 0 0;
   }
 
   .features .features-item-description {
-    width: 65%; 
+    width: 60%; 
   }
 
   /* Reviews */
@@ -711,7 +726,7 @@ input[type=button] {
     width: 48%;
   }
   .reviews article div {
-    width: 48%;        
+    width: 48%;       
   }
 
   .reviews p {
@@ -721,19 +736,23 @@ input[type=button] {
   /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
+    margin: 90px 0;
   }
 
   .footer-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+  }
+  
+  footer h4 {
+    margin: 0 0 40px 0;
   }
 
   footer .contact {
     margin-bottom: 0;
   }
-  
+
   /* why?? remove?? */
   footer .copyright {
     width: 100%;
@@ -765,7 +784,6 @@ input[type=button] {
   }
 
   .contact-content h4 {
-    font-size: 1.5em;
     margin: 0 0 10px 0;
   }
     
@@ -773,7 +791,7 @@ input[type=button] {
 
   .faq .content-wrapper {
     justify-content: space-between;
-    
+    align-items: flex-start;
   }
 
   .faq-content {
@@ -786,6 +804,7 @@ input[type=button] {
 
   .faq h3 {
     font-size: .875em;
+    line-height: 18px;
     margin: 0 0 15px 0;
   }
 }
@@ -798,19 +817,40 @@ input[type=button] {
     max-width: 960px;
   }
 
+  h1 {
+    font-size: 3.75em;
+    line-height: 78px;
+    width: 75%;
+  }
+
+  h2 {
+    font-size: 3em;
+    line-height: 56px;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+    line-height: 38px;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
   /* Header */
   /*apparently not needed... */
   header {
-    padding: 20px 0;
+    padding: 25px 0;
   } 
 
   header figure {
     width: 30%;
   }
 
-  /* Hero */
-  .hero-area h1 {
-    width: 60%;
+  header nav {
+    font-size: 1.125em;
   }
 
   /* Aside */
@@ -820,34 +860,80 @@ input[type=button] {
 
   aside .form-description,
   aside .form {        
-    width: 30%;         
+    width: 33%;         
+  }
+
+  input[type=text] {
+    font-size: 1.125em;
+  }
+
+  input[type=button] {
+    font-size: 1.5em;
   }
 
   /* Features */
   .features h2 {
     width: 90%;
+    margin-bottom: 90px;
   }
 
   .features article {
     flex-basis: 33%;
   }
 
-  /* Reviews */
-  .reviews article div {
-    width: 45%;        
+  .features .features-item-description {
+    width: 68%; 
   }
 
+  /* Reviews */
+  .reviews h2 {
+    margin-bottom: 70px;
+  }
+
+  .reviews article {
+    align-items: flex-start;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 48%;        
+  }
+
+ /* Footer */
+.footer-content {
+  justify-content: space-between;
+}
+
  /**** DESKTOP STYLES - About Page ****/
- 
-  .mission h2,
+  .mission h2 {
+    width: 95%;
+  }
+  
   .contact-section .content-wrapper h2 {
-      width: 95%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .mission-content p {
+    width: 48%;
+  }
+
+  .contact-content h4 {
+    margin-bottom: 40px;
+  }
+
+  .contact-content div{
+    width: 48%;
   }
 
  /**** DESKTOP STYLES - FAQ Page ****/
 
-  .faq h2 {
-    width: 100%;
+  .faq-content {
+    flex-basis: 45%;
+  } 
+  .faq h3 {
+    font-size: 1.125em;
+    line-height: 18px;
   }
 }
 
