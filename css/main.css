@@ -100,13 +100,6 @@ body {
   text-align: left;
 }
 
-/*
-main {
-
-no flex?
-
-}*/
-
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -124,6 +117,7 @@ h2 {
   font-size: 1.875em;
   font-weight: 500;
   line-height: 36px;
+  /*margin: 0; need to add?*/
 }
 
 h3,
@@ -234,10 +228,6 @@ footer .content-wrapper {
   margin: 50px 0; /*why is this here again?*/
 }
 
-footer .footer-content {
-
-}
-
 footer .contact {
   margin-bottom: 50px;
 }
@@ -250,18 +240,6 @@ footer p {
   margin: 0;
 }
 
-footer address {
-
-}
-
-footer address p {
-  
-}
-
-footer .social {
-
-}
-
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -269,9 +247,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+	font-size: 1.125em;
 }
 
 footer .copyright {
@@ -292,10 +278,6 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
-.hero-area .content-wrapper {
-
-}
-
 /* Aside */
 
 aside {
@@ -310,15 +292,8 @@ aside .content-wrapper {
   margin: 30px 0 50px 0;
 }
 
-aside .form-description {
-
-}
-
 aside h3 {
   margin: 0 0 10px 0;
-}
-
-aside p {
 }
 
 aside .form {
@@ -358,10 +333,6 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features .content-wrapper {
-
-}
-
 .features h2 {
   margin: 0 0 60px 0;
 }
@@ -377,6 +348,12 @@ input[type=button] {
   width: 60%;
   margin: 30px 0;
 }
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
   text-align: center;
@@ -408,16 +385,8 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.reviews figure {
-
-}
-
 .reviews h3 {
   width: 55%;
-}
-
-.reviews p {
-
 }
 
 /* ==========================================================================
@@ -432,20 +401,8 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.mission .content-wrapper {
-
-}
-
 .mission h2 {
   margin: 0;
-}
-
-.mission .mission-content {
-
-}
-
-.mission p {
-
 }
 
 .map figure {
@@ -471,15 +428,8 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.contact-section .content-wrapper {
-
-}
 .contact-section h2 {
   margin: 0;
-}
-
-.contact-section .contact-content {
-
 }
 
 .contact-section h4 {
@@ -709,9 +659,13 @@ input[type=button] {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     flex-basis: 50%;
-    margin: 40px 0 0 0;
+    margin: 60px 0 0 0;
+  }
+  
+  .features i {
+    font-size: 5em;
   }
 
   .features .features-item-description {
@@ -749,18 +703,28 @@ input[type=button] {
 
   .footer-content {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
   
   footer h4 {
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
   }
 
   footer .contact {
     margin-bottom: 0;
   }
+  
+  footer p {
+    line-height: 24px;
+  }
 
+  footer .social-icons {
+    width: 200px;
+    justify-content: space-between;
+  }
+  
   /* why?? remove?? */
   footer .copyright {
     width: 100%;
@@ -885,7 +849,7 @@ input[type=button] {
   /* Features */
   .features h2 {
     width: 90%;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
   }
 
   .features article {
